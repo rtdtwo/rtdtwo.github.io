@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className='text-center'>
+      <div className='mt-5'>
+        <Image roundedCircle src='/boston_swag.jpeg' width={200} />
+        <h2 className='mt-4'>Hi, I'm Rishabh!</h2>
+        <p className='p-0 m-0'>Computer Science, MS</p>
+        <p className='p-0 m-0'>University of Florida, 2023</p>
+        <small><p className='mt-4'>tatiraju.rishabh@gmail.com</p></small>
+      </div>
+      <div className='mt-5'>
+        <h5>On the web</h5>
+        <a href='https://rishabh.blog'>Personal Website</a>
+        <br />
+        <a href='https://rtdtwo.medium.com'>Medium Blog</a>
+      </div>
+      <div className='mt-4'>
+        <h5>GitHub Projects</h5>
+        <a href='https://rtdtwo.github.io/voyager'>Voyager</a>
+        <br />
+        <a href='https://rtdtwo.github.io/weathair'>WeathAir</a>
+      </div>
+    </Container>
   );
 }
 
